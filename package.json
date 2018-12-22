@@ -1,0 +1,32 @@
+{
+  "name": "singlechip-stm32",
+  "version": "1.0.0",
+  "description": "summary of the work of the stm32 single chip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnsyxiang/singlechip-stm32.git"
+  },
+  "keywords": [
+    "stm32",
+    "gnsyxiang",
+    "singlechip"
+  ],
+  "author": "zhenquan.qiu",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gnsyxiang/singlechip-stm32/issues"
+  },
+  "homepage": "https://github.com/gnsyxiang/singlechip-stm32#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
