@@ -28,5 +28,5 @@ GCC_SRC_VERSION := $(GCC_VERSION)-src.tar.bz2
 GCC_BIN_VERSION := $(GCC_VERSION)-linux.tar.bz2
 
 all:
-	$(TAR_BZ) $(GCC_BIN_VERSION)
+	$(TAR_BZ) $(GCC_SRC_VERSION)
 
