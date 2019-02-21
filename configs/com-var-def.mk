@@ -28,6 +28,7 @@ MAKE1  			:= $(HOSTMAKE) -j1
 MAKE 			:= $(HOSTMAKE) -j$(PARALLEL_JOBS)
 
 MKDIR 		:= mkdir -p
+ECHO 		:= echo
 
 TAR_BZ 		:= tar -xjvf
 TAR_XZ 		:= tar -xvf
@@ -46,11 +47,23 @@ TST_DIR 	:= test
 DEP_DIR 	:= depend-lib
 INS_DIR 	:= install
 
-GCC_PATH 	:= tools/gcc-arm-none-eabi-5_4-2016q3/bin/
+GCC_PATH 	:= tools/gcc-arm-none-eabi-5_4-2016q3/bin
 GCC_PRE  	:= arm-none-eabi-
 GCC_TOOL 	:= $(GCC_PATH)/$(GCC_PRE)
 
-GCC 		:= $(GCC_TOOL)gcc
-GXX 		:= $(GCC_TOOL)g++
-STRIP 		:= $(GCC_TOOL)strip
+AR 	   		:= $(TO_TOP_DIR)/$(GCC_TOOL)ar
+AS 	   		:= $(TO_TOP_DIR)/$(GCC_TOOL)as
+LD 	   		:= $(TO_TOP_DIR)/$(GCC_TOOL)ld
+NM 	   		:= $(TO_TOP_DIR)/$(GCC_TOOL)nm
+CC 	   		:= $(TO_TOP_DIR)/$(GCC_TOOL)gcc
+GCC     	:= $(TO_TOP_DIR)/$(GCC_TOOL)gcc
+CPP     	:= $(TO_TOP_DIR)/$(GCC_TOOL)cpp
+CXX     	:= $(TO_TOP_DIR)/$(GCC_TOOL)g++
+FC      	:= $(TO_TOP_DIR)/$(GCC_TOOL)gfortran
+F77     	:= $(TO_TOP_DIR)/$(GCC_TOOL)gfortran
+RANLIB  	:= $(TO_TOP_DIR)/$(GCC_TOOL)ranlib
+READELF 	:= $(TO_TOP_DIR)/$(GCC_TOOL)readelf
+STRIP   	:= $(TO_TOP_DIR)/$(GCC_TOOL)strip
+OBJCOPY 	:= $(TO_TOP_DIR)/$(GCC_TOOL)objcopy
+OBJDUMP 	:= $(TO_TOP_DIR)/$(GCC_TOOL)objdump
 

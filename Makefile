@@ -23,4 +23,4 @@ TO_TOP_DIR 	:= .
 include $(TO_TOP_DIR)/configs/com-var-def.mk
 
 all:
-	$(GCC) -v
+	$(GCC) ./src/demo.c -o main
